@@ -160,7 +160,7 @@ mark.white {
     text-align: left;
     position: absolute;
     /* border: dotted green 5px; */
-    top: 20%;
+
     left: 40px;
     right: 40px;
     margin: 0 auto;
@@ -169,6 +169,11 @@ mark.white {
     width:auto;
     max-width:980px;
     justify-items: center;
+}
+
+.hero-text h1{
+    top: 20%;
+    font-size: minmax(10vw, 3em);
 }
 .hero-text p{
     width:50%;
