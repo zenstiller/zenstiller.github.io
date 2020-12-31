@@ -47,12 +47,15 @@ a:active {
 .logo {
     display: block;
     width: 400px;
-    margin: auto;
+    margin: 20px auto 34px auto;
 }
 
 .subhead {
-    display:block;
-    margin: -1.5em 0em .5em 25%;
+    display: block;
+    margin: auto;
+    margin-top: -2.4em;
+    margin-bottom: .6em;
+    text-align: center;
     font-family: 'Montserrat';
     text-transform: uppercase;
     font-size: 75%;
@@ -90,7 +93,13 @@ mark.white {
     /* border-left: solid black 1px; */
     width:100px;
     text-align: center;
+    /* border-right: solid black 1px; */
+}
+#nav-link {
     border-right: solid black 1px;
+}
+#nav-link:first-child {
+    border-left: solid 1px black;
 }
 
 .nav-item::after{
