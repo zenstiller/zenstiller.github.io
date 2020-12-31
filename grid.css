@@ -46,6 +46,7 @@ a:active {
 
 .logo {
     display: block;
+    width: 100%;
     max-width: 580px;
     min-width: 300px;
     margin: 20px auto 34px auto;
