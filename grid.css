@@ -46,7 +46,7 @@ a:active {
 
 .logo {
     display: block;
-    max-width: 400px;
+    width: 400px;
     margin: auto;
 }
 
