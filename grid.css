@@ -13,9 +13,11 @@ body, html {
 }
 
 h1 {
+    font-size: unset;
     font-family:'Montserrat';
     font-weight: 700;
 }
+
 h1:hover {
     text-decoration: underline;
 }
@@ -175,11 +177,12 @@ mark.white {
     top: 20%;
     font-size: 3em;
 }
-@media screen and (max-width: 675px) {
+@media only screen and (max-width: 675px) {
     .hero-text h1{
     font-size: 2em;
     }
 }
+
 .hero-text p{
     font-size: minmax(1em, 2em);
     width:50%;
