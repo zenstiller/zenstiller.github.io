@@ -46,8 +46,10 @@ a:active {
 
 .logo {
     display: block;
-    width: 400px;
+    max-width: 580px;
+    min-width: 300px;
     margin: 20px auto 34px auto;
+    padding: 0 40px;
 }
 
 .subhead {
@@ -98,6 +100,7 @@ mark.white {
 #nav-link {
     border-right: solid black 1px;
 }
+
 #nav-link:first-child {
     border-left: solid 1px black;
 }
