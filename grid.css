@@ -13,7 +13,6 @@ body, html {
 }
 
 h1 {
-    font-size:3em;
     font-family:'Montserrat';
     font-weight: 700;
 }
@@ -142,6 +141,7 @@ mark.white {
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
     url(hero-img1.jpg);
     height: 50%;
+    min-height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,9 +173,15 @@ mark.white {
 
 .hero-text h1{
     top: 20%;
-    font-size: minmax(10vw, 3em);
+    font-size: 3em;
+}
+@media screen and (max-width: 675px) {
+    .hero-text h1{
+    font-size: 2em;
+    }
 }
 .hero-text p{
+    font-size: minmax(1em, 2em);
     width:50%;
 }
 .read-button {
