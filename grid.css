@@ -99,6 +99,25 @@ mark.white {
     text-align: center;
     /* border-right: solid black 1px; */
 }
+@media only screen and (max-height: 400px) and (max-width: 675px){
+    .nav-list {
+        grid-template-columns: repeat(auto-fit, 79px);
+    }
+    .nav-item {
+        width: 80px;
+        font-size: .8em;
+    }
+}
+@media only screen and (max-width: 475px){
+    .nav-list {
+        grid-template-columns: repeat(auto-fit, 60px);
+    }
+    .nav-item {
+        width: 60px;
+        font-size: .6em;
+    }
+}
+
 #nav-link {
     border-right: solid black 1px;
 }
