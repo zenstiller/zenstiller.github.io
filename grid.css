@@ -2,10 +2,16 @@
     box-sizing: border-box;
   }
 
+:root {
+    --dark-grey: #231F20;
+    --light-grey: #dce0df;
+    --yellow: #fcc825;
+}
+
 body {
     display:flexbox;
     margin: 0px;
-    background-color:#fcc825;
+    background-color: var(--yellow);
   }
 
 body, html {
@@ -43,9 +49,7 @@ a:active {
     color:royalblue;
 }
 
-
-
-.logo {
+.logo-img{
     display: block;
     width: 100%;
     max-width: 580px;
@@ -175,6 +179,7 @@ mark.white {
 
 .hero-img {
     display: grid;
+    background-color: #fff;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
     url(hero-img1.jpg);
@@ -189,6 +194,7 @@ mark.white {
     margin-right: auto;
     /*max-width:1000px;*/
     justify-self: center;
+    image-rendering: pixelated;
 }
 .hero-img:hover {
     filter:contrast(1.2);
@@ -247,6 +253,12 @@ mark.white {
         background-color: rgba(26, 26, 26, 0.9)
 }
 
+.main-content {
+    background-color: var(--light-grey);
+    background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjkyIiBoZWlnaHQ9IjkyIiB2aWV3Qm94PSIwIDAgNDAsNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgyMDMpICI+PHJlY3QgaWQ9InBhdHRlcm4tYmFja2dyb3VuZCIgd2lkdGg9IjQwMCUiIGhlaWdodD0iNDAwJSIgZmlsbD0icmdiYSgyNTIsIDIwMCwgMzcsMSkiPjwvcmVjdD4gPHBhdGggZmlsdGVyPSJ1cmwoI2ZpbHRlcjFwYXR0ZXJuKSIgZmlsbD0iI2QxZDFkMSIgZD0iTTAgMCBoNDAgdjQwIGgtNDAgeiI+PC9wYXRoPjxwYXRoIGZpbGw9InJnYmEoMjU1LCAyNTUsIDI1NSwxKSIgZD0iTS00MCAwIGgxLjUzODQ2MTUzODQ2MTUzODUgbDE1IDIwIGwtMTUgMjAgaC0xLjUzODQ2MTUzODQ2MTUzODUgbDE1IC0yMHpNLTM2LjkyMzA3NjkyMzA3NjkyIDAgaDEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgMjAgbC0xNSAyMCBoLTEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgLTIwek0tMzMuODQ2MTUzODQ2MTUzODUgMCBoMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAyMCBsLTE1IDIwIGgtMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAtMjB6TS0zMC43NjkyMzA3NjkyMzA3NjYgMCBoMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAyMCBsLTE1IDIwIGgtMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAtMjB6TS0yNy42OTIzMDc2OTIzMDc2OTMgMCBoMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAyMCBsLTE1IDIwIGgtMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAtMjB6TS0yNC42MTUzODQ2MTUzODQ2MTMgMCBoMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAyMCBsLTE1IDIwIGgtMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAtMjB6TS0yMS41Mzg0NjE1Mzg0NjE1MzcgMCBoMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAyMCBsLTE1IDIwIGgtMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAtMjB6TS0xOC40NjE1Mzg0NjE1Mzg0NiAwIGgxLjUzODQ2MTUzODQ2MTUzODUgbDE1IDIwIGwtMTUgMjAgaC0xLjUzODQ2MTUzODQ2MTUzODUgbDE1IC0yMHpNLTE1LjM4NDYxNTM4NDYxNTM4MyAwIGgxLjUzODQ2MTUzODQ2MTUzODUgbDE1IDIwIGwtMTUgMjAgaC0xLjUzODQ2MTUzODQ2MTUzODUgbDE1IC0yMHpNLTEyLjMwNzY5MjMwNzY5MjMwNyAwIGgxLjUzODQ2MTUzODQ2MTUzODUgbDE1IDIwIGwtMTUgMjAgaC0xLjUzODQ2MTUzODQ2MTUzODUgbDE1IC0yMHpNLTkuMjMwNzY5MjMwNzY5MjMgMCBoMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAyMCBsLTE1IDIwIGgtMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAtMjB6TS02LjE1Mzg0NjE1Mzg0NjE1MyAwIGgxLjUzODQ2MTUzODQ2MTUzODUgbDE1IDIwIGwtMTUgMjAgaC0xLjUzODQ2MTUzODQ2MTUzODUgbDE1IC0yMHpNLTMuMDc2OTIzMDc2OTIzMDczIDAgaDEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgMjAgbC0xNSAyMCBoLTEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgLTIwek0wIDAgaDEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgMjAgbC0xNSAyMCBoLTEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgLTIwek0zLjA3NjkyMzA3NjkyMzA4IDAgaDEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgMjAgbC0xNSAyMCBoLTEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgLTIwek02LjE1Mzg0NjE1Mzg0NjE1MyAwIGgxLjUzODQ2MTUzODQ2MTUzODUgbDE1IDIwIGwtMTUgMjAgaC0xLjUzODQ2MTUzODQ2MTUzODUgbDE1IC0yMHpNOS4yMzA3NjkyMzA3NjkyMzQgMCBoMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAyMCBsLTE1IDIwIGgtMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAtMjB6TTEyLjMwNzY5MjMwNzY5MjMxNCAwIGgxLjUzODQ2MTUzODQ2MTUzODUgbDE1IDIwIGwtMTUgMjAgaC0xLjUzODQ2MTUzODQ2MTUzODUgbDE1IC0yMHpNMTUuMzg0NjE1Mzg0NjE1Mzg3IDAgaDEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgMjAgbC0xNSAyMCBoLTEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgLTIwek0xOC40NjE1Mzg0NjE1Mzg0NjcgMCBoMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAyMCBsLTE1IDIwIGgtMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAtMjB6TTIxLjUzODQ2MTUzODQ2MTU0IDAgaDEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgMjAgbC0xNSAyMCBoLTEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgLTIwek0yNC42MTUzODQ2MTUzODQ2MTMgMCBoMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAyMCBsLTE1IDIwIGgtMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAtMjB6TTI3LjY5MjMwNzY5MjMwNzY5MyAwIGgxLjUzODQ2MTUzODQ2MTUzODUgbDE1IDIwIGwtMTUgMjAgaC0xLjUzODQ2MTUzODQ2MTUzODUgbDE1IC0yMHpNMzAuNzY5MjMwNzY5MjMwNzc0IDAgaDEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgMjAgbC0xNSAyMCBoLTEuNTM4NDYxNTM4NDYxNTM4NSBsMTUgLTIwek0zMy44NDYxNTM4NDYxNTM4NTQgMCBoMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAyMCBsLTE1IDIwIGgtMS41Mzg0NjE1Mzg0NjE1Mzg1IGwxNSAtMjB6TTM2LjkyMzA3NjkyMzA3NjkzNCAwIGgxLjUzODQ2MTUzODQ2MTUzODUgbDE1IDIwIGwtMTUgMjAgaC0xLjUzODQ2MTUzODQ2MTUzODUgbDE1IC0yMHoiPjwvcGF0aD48L3BhdHRlcm4+IDxmaWx0ZXIgaWQ9ImZpbHRlcjFwYXR0ZXJuIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9IjAuMSIgbnVtT2N0YXZlcz0iMiIgcmVzdWx0PSJyZXN1bHQxIiB0eXBlPSJmcmFjdGFsTm9pc2UiPjwvZmVUdXJidWxlbmNlPjxmZURpc3BsYWNlbWVudE1hcCBpbjI9InJlc3VsdDEiIHNjYWxlPSIwIiByZXN1bHQ9InJlc3VsdDIiIHhDaGFubmVsU2VsZWN0b3I9IlIiIGluPSJTb3VyY2VHcmFwaGljIj48L2ZlRGlzcGxhY2VtZW50TWFwPjxmZUNvbXBvc2l0ZSBpbjI9InJlc3VsdDIiIGluPSJTb3VyY2VHcmFwaGljIiBvcGVyYXRvcj0iYXRvcCIgcmVzdWx0PSJmYlNvdXJjZUdyYXBoaWMiPjwvZmVDb21wb3NpdGU+PC9maWx0ZXI+IDwvZGVmcz4gPHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgaGVpZ2h0PSIxMDAlIiB3aWR0aD0iMTAwJSI+PC9yZWN0Pjwvc3ZnPg==");
+    box-shadow: 0px -1px 15px 5px var(--dark-grey);
+}
+
 .wrapper {
     padding: 0px 40px;
     display: grid;
@@ -259,12 +271,15 @@ mark.white {
  }
 .super-wrapper {
     display: block;
+    background-color: #fff;
     max-width:1080px;
     justify-content: center;
     justify-items: center;
     justify-self: center;
     margin: auto;
-    /* background-color: white; */
+    margin-top: -16px;
+    padding-top: 40px;
+    padding-bottom: 80px;
     margin-bottom: 80px;
 }
 
@@ -322,7 +337,7 @@ mark.white {
 .d:hover::before,
 .e:hover::before,
 .f:hover::before{
-    filter:blur(4px);
+    filter:blur(2.5px) contrast(1.2);
     background-color:rgba(175, 175, 175, 0)
   }
 
@@ -385,7 +400,7 @@ mark.white {
 footer {
     display: flex;
     flex-flow: row wrap;
-    background-color: #444;
+    background-color: var(--dark-grey);
     justify-content: center;
 }
 
@@ -407,7 +422,7 @@ footer ul {
 }
 
 .footer-img {
-    height: 30px;
+    height: 40px;
 }
 
 .footer-img-wrapper {
@@ -439,8 +454,8 @@ footer ul {
     margin: 0;
 }
 
-.footer-box {
-}
+/* .footer-box {
+} */
 
 .b-footer {
     display: flex;
