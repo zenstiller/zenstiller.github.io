@@ -532,7 +532,7 @@ footer ul {
     margin-top: 32px;
     font-family: 'Montserrat';
     height: max-content;
-    border: dotted green 3px;
+    /* border: dotted green 3px; */
 }
 
 .album-img {
